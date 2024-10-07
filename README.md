@@ -8,6 +8,8 @@ Binary Thresholding and Morphological Operations: Allows users to set a threshol
 Mesh Optimization: Includes options to decimate (reduce the number of triangles) and smooth the mesh, preserving topology and ensuring a clean surface.
 Estimation and Feedback: Provides real-time feedback on the estimated output size and triangle count, allowing users to adjust settings accordingly.
 Threaded Execution: Multi-threaded processing ensures that the GUI remains responsive during the conversion process.
+
+
 How It Works
 Load NRRD File: Select the .nrrd file you want to convert.
 Set Threshold Value: Adjust the threshold value to extract the desired region of interest from the medical image.
@@ -15,20 +17,22 @@ Decimate and Optimize: Enable the decimation option to reduce the triangle count
 Convert and Save: Click on Convert to STL to start the conversion. The final .stl file can be saved to your desired location.
 View Progress and Results: The application displays progress updates and estimated output sizes based on the chosen settings.
 Dependencies
+
+
 The following Python libraries are required to run this script:
 
 SimpleITK: Used for image processing and manipulation of NRRD files.
 VTK (Visualization Toolkit): Handles 3D mesh generation and export to STL format.
 PyQt5: Provides the graphical user interface components.
 numpy: Supports array manipulation and operations.
-To install the necessary dependencies, run:
 
-bash
-Copy code
+
+To install the necessary dependencies, run:
 pip install SimpleITK vtk PyQt5 numpy
+
+
 How to Use
 Run the Script:
-Copy code
 python nrrd_to_stl_converter.py
 Select a NRRD File: Use the Select NRRD File button to choose the .nrrd file you want to process.
 Set Parameters:
@@ -36,6 +40,8 @@ Adjust the threshold value to control which parts of the 3D image are extracted.
 Enable or disable the decimation option and set the reduction percentage if needed.
 Convert to STL: Click the Convert to STL button to start the conversion process.
 Save the STL File: After conversion, save the .stl file to your desired location.
+
+
 License
 This software is licensed under the MIT License. See the LICENSE file for more details.
 
